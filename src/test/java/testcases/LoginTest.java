@@ -26,13 +26,13 @@ public class LoginTest extends CommonMethods {
     public Object[][] invalidData(){
         Object[][] data={
                 {"james","123!","Invalid credentials"},
-                {"Admin2","Hum@nhrm123", "Invalid credentials"},
+                {"Admin2","Hum@nhrm123", "Invalid credential"},
                 {"Admin","","Password cannot be empty"},
                 {"","Hum@nhrm123","Username cannot be empty"}
         };
         return data;
     }
-    @Test(dataProvider = "invalidData")
+    @Test(dataProvider = "invalidData", groups = "smoke")
     public void invalidLoginErrorMessageValidation(String username, String password, String message){
         LoginPage loginPage=new LoginPage();
         loginPage.login(username, password);

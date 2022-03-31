@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 public class AddEmployeeTest extends CommonMethods {
-    @Test(groups = "smoke")
+    @Test(groups = "smoke1")
     public void addEmployee(){
         LoginPage loginPage=new LoginPage();
         loginPage.login(ConfigReader.getPropertyValue("username"),ConfigReader.getPropertyValue("password"));
