@@ -1,0 +1,11 @@
+User stories
+US-12345- user shouldbe able to login via valid credentials
+
+US-87978- Admin user should be able to add an employee to the hrms application
+
+US-34342- System should display error message when invalid login is performed
+
+1 when user enter valid /invalid username and valid/invalid password then display "Invalid credentials"
+2 when user leaves password field empty then display "Password cannot be empty"
+3 when user leaves username field empty then display "Username cannot be empty"
+
