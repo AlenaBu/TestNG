@@ -25,6 +25,7 @@ public class ConfigReader {
 
     //this method retrieves single value based on the specific key
     public static String getPropertyValue(String key) {
+
         return prop.getProperty(key);
     }
 }
